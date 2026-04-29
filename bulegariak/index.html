@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>GAMESTOP - WEBGUNE PRIBATUA</title>
+      <link rel="stylesheet" href="../CSS/estiloak.css">
+      <link rel="icon" href="../ikonoak/GAMESTOPLOGOA FONDO BARIK.png">
+   </head>
+   <body>
+      <header>
+         <div class="header-content">
+            <h1>GAMESTOP - WEBGUNE PRIBATUA</h1>
+            <div class="user-info"><span>Kaixo, <strong>Admin</strong></span><a href="../logout/" class="btn-logout">Saioa itxi</a></div>
+         </div>
+      </header>
+      <nav>
+         <div class="nav-links"><a href="../">Hasiera</a><a href="../bezeroak/">Bezeroak</a><a href="">Bulegariak</a><a href="../biltegiak/">Biltegiak</a><a href="../eskaria/">Eskariak</a><a href="../produktuak/">Inbentarioa</a><a href="../saltzaileak">Saltzaileak</a></div>
+         <div class="nav-search"><input type="text" id="bilatzailea" onkeyup="bilatuEdukia()" placeholder="Bilatu..."></div>
+      </nav>
+      <div class="breadcrumbs">
+         <p>Hasiera &gt; </p>
+      </div>
+      <main>
+         <div class="taula-kontenedorea">
+            <h2 style="text-align:left; padding-left:20px;">Gure Bulegariak</h2>
+            <table>
+               <thead>
+                  <tr>
+                     <th>Abatarra</th>
+                     <th>Izena</th>
+                     <th>Lanpostua</th>
+                     <th>Emaila</th>
+                     <th>Telefonoa / Data</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-6.png" class="taula-abatar" alt="Summer"></td>
+                     <td><strong>SummerPayne</strong></td>
+                     <td><span class="lanpostua">Public Accountant</span><br><small>ID: 1</small></td>
+                     <td>summer.payne@example.com</td>
+                     <td>515.123.8181<br><small>07/06/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-2.png" class="taula-abatar" alt="Rose"></td>
+                     <td><strong>RoseStephens</strong></td>
+                     <td><span class="lanpostua">Accounting Manager</span><br><small>ID: 2</small></td>
+                     <td>rose.stephens@example.com</td>
+                     <td>515.123.8080<br><small>07/06/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-1.png" class="taula-abatar" alt="Annabelle"></td>
+                     <td><strong>AnnabelleDunn</strong></td>
+                     <td><span class="lanpostua">Administration Assistant</span><br><small>ID: 3</small></td>
+                     <td>annabelle.dunn@example.com</td>
+                     <td>515.123.4444<br><small>17/09/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-5.png" class="taula-abatar" alt="Tommy"></td>
+                     <td><strong>TommyBailey</strong></td>
+                     <td><span class="lanpostua">President</span><br><small>ID: 4</small></td>
+                     <td>tommy.bailey@example.com</td>
+                     <td>515.123.4567<br><small>17/06/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-6.png" class="taula-abatar" alt="Blake"></td>
+                     <td><strong>BlakeCooper</strong></td>
+                     <td><span class="lanpostua">Administration Vice President</span><br><small>ID: 5</small></td>
+                     <td>blake.cooper@example.com</td>
+                     <td>515.123.4569<br><small>13/01/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-1.png" class="taula-abatar" alt="Jude"></td>
+                     <td><strong>JudeRivera</strong></td>
+                     <td><span class="lanpostua">Administration Vice President</span><br><small>ID: 5</small></td>
+                     <td>jude.rivera@example.com</td>
+                     <td>515.123.4568<br><small>21/09/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-5.png" class="taula-abatar" alt="Tyler"></td>
+                     <td><strong>TylerRamirez</strong></td>
+                     <td><span class="lanpostua">Accountant</span><br><small>ID: 6</small></td>
+                     <td>tyler.ramirez@example.com</td>
+                     <td>515.124.4269<br><small>28/09/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-3.png" class="taula-abatar" alt="Ryan"></td>
+                     <td><strong>RyanGray</strong></td>
+                     <td><span class="lanpostua">Accountant</span><br><small>ID: 6</small></td>
+                     <td>ryan.gray@example.com</td>
+                     <td>515.124.4169<br><small>16/08/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-6.png" class="taula-abatar" alt="Elliot"></td>
+                     <td><strong>ElliotBrooks</strong></td>
+                     <td><span class="lanpostua">Accountant</span><br><small>ID: 6</small></td>
+                     <td>elliTIENDA.brooks@example.com</td>
+                     <td>515.124.4567<br><small>07/12/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-2.png" class="taula-abatar" alt="Elliott"></td>
+                     <td><strong>ElliottJames</strong></td>
+                     <td><span class="lanpostua">Accountant</span><br><small>ID: 6</small></td>
+                     <td>elliott.james@example.com</td>
+                     <td>515.124.4369<br><small>30/09/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-3.png" class="taula-abatar" alt="Albert"></td>
+                     <td><strong>AlbertWatson</strong></td>
+                     <td><span class="lanpostua">Accountant</span><br><small>ID: 6</small></td>
+                     <td>albert.watson@example.com</td>
+                     <td>515.124.4469<br><small>07/03/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-2.png" class="taula-abatar" alt="Mohammad"></td>
+                     <td><strong>MohammadPeterson</strong></td>
+                     <td><span class="lanpostua">Finance Manager</span><br><small>ID: 7</small></td>
+                     <td>mohammad.peterson@example.com</td>
+                     <td>515.124.4569<br><small>17/08/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-6.png" class="taula-abatar" alt="Harper"></td>
+                     <td><strong>HarperSpencer</strong></td>
+                     <td><span class="lanpostua">Human Resources Representative</span><br><small>ID: 8</small></td>
+                     <td>harper.spencer@example.com</td>
+                     <td>515.123.7777<br><small>07/06/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-2.png" class="taula-abatar" alt="Louie"></td>
+                     <td><strong>LouieRichardson</strong></td>
+                     <td><span class="lanpostua">Programmer</span><br><small>ID: 9</small></td>
+                     <td>louie.richardson@example.com</td>
+                     <td>590.423.4567<br><small>03/01/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-1.png" class="taula-abatar" alt="Nathan"></td>
+                     <td><strong>NathanCox</strong></td>
+                     <td><span class="lanpostua">Programmer</span><br><small>ID: 9</small></td>
+                     <td>nathan.cox@example.com</td>
+                     <td>590.423.4568<br><small>21/05/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-1.png" class="taula-abatar" alt="Bobby"></td>
+                     <td><strong>BobbyTorres</strong></td>
+                     <td><span class="lanpostua">Programmer</span><br><small>ID: 9</small></td>
+                     <td>bobby.torres@example.com</td>
+                     <td>590.423.5567<br><small>07/02/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-2.png" class="taula-abatar" alt="Charles"></td>
+                     <td><strong>CharlesWard</strong></td>
+                     <td><span class="lanpostua">Programmer</span><br><small>ID: 9</small></td>
+                     <td>charles.ward@example.com</td>
+                     <td>590.423.4560<br><small>05/02/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-4.png" class="taula-abatar" alt="Gabriel"></td>
+                     <td><strong>GabrielHoward</strong></td>
+                     <td><span class="lanpostua">Programmer</span><br><small>ID: 9</small></td>
+                     <td>gabriel.howard@example.com</td>
+                     <td>590.423.4569<br><small>25/06/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-6.png" class="taula-abatar" alt="Emma"></td>
+                     <td><strong>EmmaPerkins</strong></td>
+                     <td><span class="lanpostua">Marketing Manager</span><br><small>ID: 10</small></td>
+                     <td>emma.perkins@example.com</td>
+                     <td>515.123.5555<br><small>17/02/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-2.png" class="taula-abatar" alt="Amelie"></td>
+                     <td><strong>AmelieHudson</strong></td>
+                     <td><span class="lanpostua">Marketing Representative</span><br><small>ID: 11</small></td>
+                     <td>amelie.hudson@example.com</td>
+                     <td>603.123.6666<br><small>17/08/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-2.png" class="taula-abatar" alt="Gracie"></td>
+                     <td><strong>GracieGardner</strong></td>
+                     <td><span class="lanpostua">Public Relations Representative</span><br><small>ID: 12</small></td>
+                     <td>gracie.gardner@example.com</td>
+                     <td>515.123.8888<br><small>07/06/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-4.png" class="taula-abatar" alt="Frederick"></td>
+                     <td><strong>FrederickPrice</strong></td>
+                     <td><span class="lanpostua">Purchasing Clerk</span><br><small>ID: 13</small></td>
+                     <td>frederick.price@example.com</td>
+                     <td>515.127.4563<br><small>24/12/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-2.png" class="taula-abatar" alt="Alex"></td>
+                     <td><strong>AlexSanders</strong></td>
+                     <td><span class="lanpostua">Purchasing Clerk</span><br><small>ID: 13</small></td>
+                     <td>alex.sanders@example.com</td>
+                     <td>515.127.4562<br><small>18/05/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-1.png" class="taula-abatar" alt="Ollie"></td>
+                     <td><strong>OllieBennett</strong></td>
+                     <td><span class="lanpostua">Purchasing Clerk</span><br><small>ID: 13</small></td>
+                     <td>ollie.bennett@example.com</td>
+                     <td>515.127.4564<br><small>24/07/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-4.png" class="taula-abatar" alt="Louis"></td>
+                     <td><strong>LouisWood</strong></td>
+                     <td><span class="lanpostua">Purchasing Clerk</span><br><small>ID: 13</small></td>
+                     <td>louis.wood@example.com</td>
+                     <td>515.127.4565<br><small>15/11/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-1.png" class="taula-abatar" alt="Dexter"></td>
+                     <td><strong>DexterBarnes</strong></td>
+                     <td><span class="lanpostua">Purchasing Clerk</span><br><small>ID: 13</small></td>
+                     <td>dexter.barnes@example.com</td>
+                     <td>515.127.4566<br><small>10/08/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-3.png" class="taula-abatar" alt="Rory"></td>
+                     <td><strong>RoryKelly</strong></td>
+                     <td><span class="lanpostua">Purchasing Manager</span><br><small>ID: 14</small></td>
+                     <td>rory.kelly@example.com</td>
+                     <td>515.127.4561<br><small>07/12/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-5.png" class="taula-abatar" alt="Isabella"></td>
+                     <td><strong>IsabellaCole</strong></td>
+                     <td><span class="lanpostua">Sales Manager</span><br><small>ID: 15</small></td>
+                     <td>isabella.cole@example.com</td>
+                     <td>011.44.1344.619268<br><small>15/10/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-1.png" class="taula-abatar" alt="Jessica"></td>
+                     <td><strong>JessicaWoods</strong></td>
+                     <td><span class="lanpostua">Sales Manager</span><br><small>ID: 15</small></td>
+                     <td>jessica.woods@example.com</td>
+                     <td>011.44.1344.429278<br><small>10/03/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-1.png" class="taula-abatar" alt="Ella"></td>
+                     <td><strong>EllaWallace</strong></td>
+                     <td><span class="lanpostua">Sales Manager</span><br><small>ID: 15</small></td>
+                     <td>ella.wallace@example.com</td>
+                     <td>011.44.1344.467268<br><small>05/01/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-2.png" class="taula-abatar" alt="Ava"></td>
+                     <td><strong>AvaSullivan</strong></td>
+                     <td><span class="lanpostua">Sales Manager</span><br><small>ID: 15</small></td>
+                     <td>ava.sullivan@example.com</td>
+                     <td>011.44.1344.429268<br><small>01/10/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-3.png" class="taula-abatar" alt="Mia"></td>
+                     <td><strong>MiaWest</strong></td>
+                     <td><span class="lanpostua">Sales Manager</span><br><small>ID: 15</small></td>
+                     <td>mia.west@example.com</td>
+                     <td>011.44.1344.429018<br><small>29/01/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-3.png" class="taula-abatar" alt="Holly"></td>
+                     <td><strong>HollyShaw</strong></td>
+                     <td><span class="lanpostua">Shipping Clerk</span><br><small>ID: 17</small></td>
+                     <td>holly.shaw@example.com</td>
+                     <td>650.509.1876<br><small>27/01/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-1.png" class="taula-abatar" alt="Emilia"></td>
+                     <td><strong>EmiliaHolmes</strong></td>
+                     <td><span class="lanpostua">Shipping Clerk</span><br><small>ID: 17</small></td>
+                     <td>emilia.holmes@example.com</td>
+                     <td>650.509.2876<br><small>20/02/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-6.png" class="taula-abatar" alt="Molly"></td>
+                     <td><strong>MollyRice</strong></td>
+                     <td><span class="lanpostua">Shipping Clerk</span><br><small>ID: 17</small></td>
+                     <td>molly.rice@example.com</td>
+                     <td>650.509.3876<br><small>24/06/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-3.png" class="taula-abatar" alt="Ellie"></td>
+                     <td><strong>EllieRobertson</strong></td>
+                     <td><span class="lanpostua">Shipping Clerk</span><br><small>ID: 17</small></td>
+                     <td>ellie.robertson@example.com</td>
+                     <td>650.509.4876<br><small>07/02/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-3.png" class="taula-abatar" alt="Jasmine"></td>
+                     <td><strong>JasmineHunt</strong></td>
+                     <td><span class="lanpostua">Shipping Clerk</span><br><small>ID: 17</small></td>
+                     <td>jasmine.hunt@example.com</td>
+                     <td>650.505.1876<br><small>14/06/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-4.png" class="taula-abatar" alt="Eliza"></td>
+                     <td><strong>ElizaBlack</strong></td>
+                     <td><span class="lanpostua">Shipping Clerk</span><br><small>ID: 17</small></td>
+                     <td>eliza.black@example.com</td>
+                     <td>650.505.2876<br><small>13/08/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-1.png" class="taula-abatar" alt="Lilly"></td>
+                     <td><strong>LillyDaniels</strong></td>
+                     <td><span class="lanpostua">Shipping Clerk</span><br><small>ID: 17</small></td>
+                     <td>lilly.daniels@example.com</td>
+                     <td>650.505.3876<br><small>11/07/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-4.png" class="taula-abatar" alt="Abigail"></td>
+                     <td><strong>AbigailPalmer</strong></td>
+                     <td><span class="lanpostua">Shipping Clerk</span><br><small>ID: 17</small></td>
+                     <td>abigail.palmer@example.com</td>
+                     <td>650.505.4876<br><small>19/12/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-6.png" class="taula-abatar" alt="Georgia"></td>
+                     <td><strong>GeorgiaMills</strong></td>
+                     <td><span class="lanpostua">Shipping Clerk</span><br><small>ID: 17</small></td>
+                     <td>georgia.mills@example.com</td>
+                     <td>650.501.1876<br><small>04/02/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-1.png" class="taula-abatar" alt="Maisie"></td>
+                     <td><strong>MaisieNichols</strong></td>
+                     <td><span class="lanpostua">Shipping Clerk</span><br><small>ID: 17</small></td>
+                     <td>maisie.nichols@example.com</td>
+                     <td>650.501.2876<br><small>03/03/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-3.png" class="taula-abatar" alt="Eleanor"></td>
+                     <td><strong>EleanorGrant</strong></td>
+                     <td><span class="lanpostua">Shipping Clerk</span><br><small>ID: 17</small></td>
+                     <td>eleanor.grant@example.com</td>
+                     <td>650.501.3876<br><small>01/07/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-4.png" class="taula-abatar" alt="Hannah"></td>
+                     <td><strong>HannahKnight</strong></td>
+                     <td><span class="lanpostua">Shipping Clerk</span><br><small>ID: 17</small></td>
+                     <td>hannah.knight@example.com</td>
+                     <td>650.501.4876<br><small>17/03/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-3.png" class="taula-abatar" alt="Harriet"></td>
+                     <td><strong>HarrietFerguson</strong></td>
+                     <td><span class="lanpostua">Shipping Clerk</span><br><small>ID: 17</small></td>
+                     <td>harriet.ferguson@example.com</td>
+                     <td>650.507.9811<br><small>24/04/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-2.png" class="taula-abatar" alt="Amber"></td>
+                     <td><strong>AmberRose</strong></td>
+                     <td><span class="lanpostua">Shipping Clerk</span><br><small>ID: 17</small></td>
+                     <td>amber.rose@example.com</td>
+                     <td>650.507.9822<br><small>23/05/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-4.png" class="taula-abatar" alt="Bella"></td>
+                     <td><strong>BellaStone</strong></td>
+                     <td><span class="lanpostua">Shipping Clerk</span><br><small>ID: 17</small></td>
+                     <td>bella.stone@example.com</td>
+                     <td>650.507.9833<br><small>21/06/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-5.png" class="taula-abatar" alt="Thea"></td>
+                     <td><strong>TheaHawkins</strong></td>
+                     <td><span class="lanpostua">Shipping Clerk</span><br><small>ID: 17</small></td>
+                     <td>thea.hawkins@example.com</td>
+                     <td>650.507.9844<br><small>13/01/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-2.png" class="taula-abatar" alt="Lola"></td>
+                     <td><strong>LolaRamos</strong></td>
+                     <td><span class="lanpostua">Shipping Clerk</span><br><small>ID: 17</small></td>
+                     <td>lola.ramos@example.com</td>
+                     <td>650.507.9876<br><small>24/01/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-2.png" class="taula-abatar" alt="Willow"></td>
+                     <td><strong>WillowReyes</strong></td>
+                     <td><span class="lanpostua">Shipping Clerk</span><br><small>ID: 17</small></td>
+                     <td>willow.reyes@example.com</td>
+                     <td>650.507.9877<br><small>23/02/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-6.png" class="taula-abatar" alt="Ivy"></td>
+                     <td><strong>IvyBurns</strong></td>
+                     <td><span class="lanpostua">Shipping Clerk</span><br><small>ID: 17</small></td>
+                     <td>ivy.burns@example.com</td>
+                     <td>650.507.9878<br><small>21/06/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-2.png" class="taula-abatar" alt="Erin"></td>
+                     <td><strong>ErinGordon</strong></td>
+                     <td><span class="lanpostua">Shipping Clerk</span><br><small>ID: 17</small></td>
+                     <td>erin.gordon@example.com</td>
+                     <td>650.507.9879<br><small>03/02/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-1.png" class="taula-abatar" alt="Reggie"></td>
+                     <td><strong>ReggieSimmons</strong></td>
+                     <td><span class="lanpostua">Stock Clerk</span><br><small>ID: 18</small></td>
+                     <td>reggie.simmons@example.com</td>
+                     <td>650.124.8234<br><small>10/04/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-2.png" class="taula-abatar" alt="Emily"></td>
+                     <td><strong>EmilyHamilton</strong></td>
+                     <td><span class="lanpostua">Stock Clerk</span><br><small>ID: 18</small></td>
+                     <td>emily.hamilton@example.com</td>
+                     <td>650.121.2874<br><small>15/03/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-3.png" class="taula-abatar" alt="Olivia"></td>
+                     <td><strong>OliviaFord</strong></td>
+                     <td><span class="lanpostua">Stock Clerk</span><br><small>ID: 18</small></td>
+                     <td>olivia.ford@example.com</td>
+                     <td>650.121.2994<br><small>29/01/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-2.png" class="taula-abatar" alt="Amelia"></td>
+                     <td><strong>AmeliaMyers</strong></td>
+                     <td><span class="lanpostua">Stock Clerk</span><br><small>ID: 18</small></td>
+                     <td>amelia.myers@example.com</td>
+                     <td>650.121.8009<br><small>17/10/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-3.png" class="taula-abatar" alt="Connor"></td>
+                     <td><strong>ConnorHayes</strong></td>
+                     <td><span class="lanpostua">Stock Clerk</span><br><small>ID: 18</small></td>
+                     <td>connor.hayes@example.com</td>
+                     <td>650.121.1834<br><small>06/04/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-5.png" class="taula-abatar" alt="Leon"></td>
+                     <td><strong>LeonPowell</strong></td>
+                     <td><span class="lanpostua">Stock Clerk</span><br><small>ID: 18</small></td>
+                     <td>leon.powell@example.com</td>
+                     <td>650.124.1214<br><small>16/07/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-6.png" class="taula-abatar" alt="Kai"></td>
+                     <td><strong>KaiLong</strong></td>
+                     <td><span class="lanpostua">Stock Clerk</span><br><small>ID: 18</small></td>
+                     <td>kai.long@example.com</td>
+                     <td>650.124.1224<br><small>28/09/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-6.png" class="taula-abatar" alt="Aaron"></td>
+                     <td><strong>AaronPatterson</strong></td>
+                     <td><span class="lanpostua">Stock Clerk</span><br><small>ID: 18</small></td>
+                     <td>aaron.patterson@example.com</td>
+                     <td>650.124.1334<br><small>14/01/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-6.png" class="taula-abatar" alt="Roman"></td>
+                     <td><strong>RomanHughes</strong></td>
+                     <td><span class="lanpostua">Stock Clerk</span><br><small>ID: 18</small></td>
+                     <td>roman.hughes@example.com</td>
+                     <td>650.124.1434<br><small>08/03/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-6.png" class="taula-abatar" alt="Austin"></td>
+                     <td><strong>AustinFlores</strong></td>
+                     <td><span class="lanpostua">Stock Clerk</span><br><small>ID: 18</small></td>
+                     <td>austin.flores@example.com</td>
+                     <td>650.124.5234<br><small>20/08/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-4.png" class="taula-abatar" alt="Ellis"></td>
+                     <td><strong>EllisWashington</strong></td>
+                     <td><span class="lanpostua">Stock Clerk</span><br><small>ID: 18</small></td>
+                     <td>ellis.washington@example.com</td>
+                     <td>650.124.6234<br><small>30/10/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-2.png" class="taula-abatar" alt="Jamie"></td>
+                     <td><strong>JamieButler</strong></td>
+                     <td><span class="lanpostua">Stock Clerk</span><br><small>ID: 18</small></td>
+                     <td>jamie.butler@example.com</td>
+                     <td>650.124.7234<br><small>16/02/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-4.png" class="taula-abatar" alt="Isla"></td>
+                     <td><strong>IslaGraham</strong></td>
+                     <td><span class="lanpostua">Stock Clerk</span><br><small>ID: 18</small></td>
+                     <td>isla.graham@example.com</td>
+                     <td>650.121.2004<br><small>09/07/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-6.png" class="taula-abatar" alt="Seth"></td>
+                     <td><strong>SethFoster</strong></td>
+                     <td><span class="lanpostua">Stock Clerk</span><br><small>ID: 18</small></td>
+                     <td>seth.foster@example.com</td>
+                     <td>650.127.1934<br><small>14/06/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-6.png" class="taula-abatar" alt="Carter"></td>
+                     <td><strong>CarterGonzales</strong></td>
+                     <td><span class="lanpostua">Stock Clerk</span><br><small>ID: 18</small></td>
+                     <td>carter.gonzales@example.com</td>
+                     <td>650.127.1834<br><small>26/08/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-5.png" class="taula-abatar" alt="Felix"></td>
+                     <td><strong>FelixBryant</strong></td>
+                     <td><span class="lanpostua">Stock Clerk</span><br><small>ID: 18</small></td>
+                     <td>felix.bryant@example.com</td>
+                     <td>650.127.1734<br><small>12/12/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-2.png" class="taula-abatar" alt="Ibrahim"></td>
+                     <td><strong>IbrahimAlexander</strong></td>
+                     <td><span class="lanpostua">Stock Clerk</span><br><small>ID: 18</small></td>
+                     <td>ibrahim.alexander@example.com</td>
+                     <td>650.127.1634<br><small>06/02/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-6.png" class="taula-abatar" alt="Sonny"></td>
+                     <td><strong>SonnyRussell</strong></td>
+                     <td><span class="lanpostua">Stock Clerk</span><br><small>ID: 18</small></td>
+                     <td>sonny.russell@example.com</td>
+                     <td>650.121.1234<br><small>14/07/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-3.png" class="taula-abatar" alt="Kian"></td>
+                     <td><strong>KianGriffin</strong></td>
+                     <td><span class="lanpostua">Stock Clerk</span><br><small>ID: 18</small></td>
+                     <td>kian.griffin@example.com</td>
+                     <td>650.121.2034<br><small>26/10/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-3.png" class="taula-abatar" alt="Caleb"></td>
+                     <td><strong>CalebDiaz</strong></td>
+                     <td><span class="lanpostua">Stock Clerk</span><br><small>ID: 18</small></td>
+                     <td>caleb.diaz@example.com</td>
+                     <td>650.121.2019<br><small>12/02/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-2.png" class="taula-abatar" alt="Ronnie"></td>
+                     <td><strong>RonniePerry</strong></td>
+                     <td><span class="lanpostua">Stock Manager</span><br><small>ID: 19</small></td>
+                     <td>ronnie.perry@example.com</td>
+                     <td>650.123.5234<br><small>16/11/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-6.png" class="taula-abatar" alt="Callum"></td>
+                     <td><strong>CallumJenkins</strong></td>
+                     <td><span class="lanpostua">Stock Manager</span><br><small>ID: 19</small></td>
+                     <td>callum.jenkins@example.com</td>
+                     <td>650.123.4234<br><small>10/10/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-1.png" class="taula-abatar" alt="Jackson"></td>
+                     <td><strong>JacksonColeman</strong></td>
+                     <td><span class="lanpostua">Stock Manager</span><br><small>ID: 19</small></td>
+                     <td>jackson.coleman@example.com</td>
+                     <td>650.123.3234<br><small>01/05/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-6.png" class="taula-abatar" alt="Liam"></td>
+                     <td><strong>LiamHenderson</strong></td>
+                     <td><span class="lanpostua">Stock Manager</span><br><small>ID: 19</small></td>
+                     <td>liam.henderson@example.com</td>
+                     <td>650.123.2234<br><small>10/04/16</small></td>
+                  </tr>
+                  <tr>
+                     <td><img src="../irudiak/abatars/thumb-4.png" class="taula-abatar" alt="Jaxon"></td>
+                     <td><strong>JaxonRoss</strong></td>
+                     <td><span class="lanpostua">Stock Manager</span><br><small>ID: 19</small></td>
+                     <td>jaxon.ross@example.com</td>
+                     <td>650.123.1234<br><small>18/07/16</small></td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+      </main>
+      <footer>
+         <div class="footer-grid">
+            <div class="footer-section">
+               <h4>GAMESTOP</h4>
+               <p>Bideojokoen kudeaketa sistema pribatua.</p>
+            </div>
+            <div class="footer-section">
+               <h4>Laguntza</h4>
+               <ul>
+                  <li><a href="#">Dokumentazioa</a></li>
+                  <li><a href="#">Soporte teknikoa</a></li>
+               </ul>
+            </div>
+         </div>
+         <hr>
+         <p>2026 GAMESTOP. Guztiak erreserbatuta.</p>
+      </footer>
+   </body><script>
+        function bilatuEdukia() {
+        var input = document.getElementById('bilatzailea');
+        var filter = input.value.toLowerCase();
+        
+        // 1. Filtrar Tarjetas (Bezeroak, Saltzaileak, Biltegiak)
+        var kartak = document.querySelectorAll('.karta-langilea, .karta-biltegi');
+        kartak.forEach(function(karta) {
+        var testua = karta.textContent || karta.innerText;
+        karta.style.display = testua.toLowerCase().indexOf(filter) > -1 ? "" : "none";
+        });
+        
+        // 2. Filtrar Filas de Tablas (Bulegariak, Eskariak, Produktuak)
+        var lerroak = document.querySelectorAll('tbody tr');
+        lerroak.forEach(function(lerroa) {
+        var testua = lerroa.textContent || lerroa.innerText;
+        lerroa.style.display = testua.toLowerCase().indexOf(filter) > -1 ? "" : "none";
+        });
+        }
+      </script></html>
