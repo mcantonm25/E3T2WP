@@ -1,0 +1,368 @@
+/* --- OINARRIZKO ESTILOAK --- */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e6edf8;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* --- HEADER HOBETUA --- */
+header {
+    background: linear-gradient(to left, #2f467c, #22d3ee);
+    text-shadow: rgb(0, 0, 0) 2px 2px 4px;
+    padding: 15px 40px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header h1 {
+    color: #ffffff;
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.user-info {
+    color: white;
+    font-size: 0.9rem;
+}
+
+.btn-logout {
+    background: #ff4b4b;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-left: 10px;
+    font-weight: bold;
+    text-shadow: none;
+    transition: 0.3s;
+}
+
+.btn-logout:hover {
+    background: #cc0000;
+}
+
+/* --- NABIGAZIOA ETA BILATZAILEA --- */
+nav {
+    background: linear-gradient(to right, #2f467c, #22d3ee);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 40px;
+    border-top: 2px solid #1e2e52;
+    border-bottom: 2px solid #1e2e52;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.nav-search input {
+    padding: 6px 12px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    width: 200px;
+}
+
+/* --- BREADCRUMBS --- */
+.breadcrumbs {
+    background: #f3f4f6;
+    padding: 10px 40px;
+    font-size: 0.85rem;
+    color: #6b7280;
+    border-bottom: 1px solid #d1d5db;
+}
+
+/* --- MAIN EDUKIA --- */
+main {
+    flex: 1;
+    padding-bottom: 40px;
+}
+
+main h2 {
+    color: #2f467c;
+    text-align: center;
+    margin-top: 30px;
+}
+
+main p {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 5px solid #22d3ee;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    max-width: 800px;
+    margin: 20px auto;
+    color: #374151;
+    line-height: 1.6;
+}
+
+/* --- FOOTER ZABALDUA --- */
+footer {
+    background: linear-gradient(to left, #2f467c, #22d3ee);
+    color: #ffffff;
+    padding: 30px 40px 10px 40px;
+    border-top: solid 3px #1e2e52;
+    text-align: center;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto 20px auto;
+    text-align: left;
+}
+
+.footer-section h4 {
+    margin-top: 0;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    padding-bottom: 5px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li a {
+    color: #e6edf8;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+footer hr {
+    border: 0;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    margin-bottom: 15px;
+}
+
+.index-edukia {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.hasier-testua {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 5px solid #22d3ee;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    color: #374151;
+    line-height: 1.6;
+    transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.hasier-testua:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(37, 175, 255, 0.3);
+}
+
+/* --- TAULAK ETA KARTAK (Lehengoak mantendu) --- */
+.taula-kontenedorea, .taula-estiloa {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 95%;
+    border: 1px solid #d1d5db;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #f3f4f6;
+    color: #2f467c;
+    padding: 12px;
+    text-align: left;
+    border-bottom: 2px solid #2f467c;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #e5e7eb;
+    color: #4b5563;
+}
+
+.breadcrumbs p {
+    color: #2f467c;
+    text-decoration: none;
+}
+
+.karta-taldea {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.karta {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    border: 1px solid #d1d5db;
+}
+
+.karta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(37, 175, 255, 0.3);
+}
+
+/* --- LANGILE ETA BEZEROEN KARTAK --- */
+.karta-sarea {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 4fr));
+    gap: 25px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.karta-biltegi {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-top: 4px solid #22d3ee;
+    transition: transform 0.3s ease;
+}
+
+.karta-langilea {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-top: 4px solid #2f467c;
+    transition: transform 0.3s ease;
+}
+
+.karta-langilea:hover {
+    transform: translateY(-5px);
+}
+
+.abatar-biribila {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #22d3ee;
+    margin-bottom: 15px;
+    background-color: #f0f0f0; /* Irudia kargatzen ez bada ikusteko */
+}
+
+.lanpostua {
+    font-weight: bold;
+    color: #2f467c;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+}
+
+.kontaktua {
+    font-size: 0.9rem;
+    color: #6b7280;
+}
+
+/* Taulako irudiak */
+.taula-abatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* --- LOGOUT ORRIAREN ESTILOAK --- */
+
+.logout-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+}
+
+.logout-karta {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    border-top: 5px solid #22d3ee; /* Logout botoiaren gorri berdina */
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+}
+
+.logout-ikonoa {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.logout-karta h2 {
+    color: #2f467c;
+    margin-top: 0;
+}
+
+.logout-karta p {
+    background: none;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    margin: 20px 0;
+    color: #6b7280;
+}
+
+.logout-ekintzak {
+    margin-top: 30px;
+}
+
+.btn-itzuli {
+    background: linear-gradient(to right, #2f467c, #22d3ee);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.btn-itzuli:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(34, 211, 238, 0.4);
+}
