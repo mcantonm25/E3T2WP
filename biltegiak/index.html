@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>GAMESTOP - WEBGUNE PRIBATUA</title>
+      <link rel="stylesheet" href="../CSS/estiloak.css">
+      <link rel="icon" href="../ikonoak/GAMESTOPLOGOA FONDO BARIK.png">
+   </head>
+   <body>
+      <header>
+         <div class="header-content">
+            <h1>GAMESTOP - WEBGUNE PRIBATUA</h1>
+            <div class="user-info"><span>Kaixo, <strong>Admin</strong></span><a href="../logout/" class="btn-logout">Saioa itxi</a></div>
+         </div>
+      </header>
+      <nav>
+         <div class="nav-links"><a href="../">Hasiera</a><a href="../bezeroak/">Bezeroak</a><a href="../bulegariak/">Bulegariak</a><a href="">Biltegiak</a><a href="../eskaria/">Eskariak</a><a href="../produktuak/">Inbentarioa</a><a href="../saltzaileak/">Saltzaileak</a></div>
+         <div class="nav-search"><input type="text" id="bilatzailea" onkeyup="bilatuEdukia()" placeholder="Bilatu..."></div>
+      </nav>
+      <div class="breadcrumbs">
+         <p>Hasiera &gt; </p>
+      </div>
+      <main>
+         <div class="karta-taldea">
+            <div class="karta-biltegi">
+               <h3>Southlake, Texas<small>(ID: 1)</small></h3>
+               <p><strong>Herrialdea:</strong>United States of America (US)</p>
+               <p><strong>Probintzia:</strong>Texas</p>
+               <p><strong>Helbidea:</strong>2014 Jabberwocky Rd, 26192</p><span class="etiketa">America</span></div>
+            <div class="karta-biltegi">
+               <h3>San Francisco<small>(ID: 2)</small></h3>
+               <p><strong>Herrialdea:</strong>United States of America (US)</p>
+               <p><strong>Probintzia:</strong>California</p>
+               <p><strong>Helbidea:</strong>2011 Interiors Blvd, 99236</p><span class="etiketa">America</span></div>
+            <div class="karta-biltegi">
+               <h3>New Jersey<small>(ID: 3)</small></h3>
+               <p><strong>Herrialdea:</strong>United States of America (US)</p>
+               <p><strong>Probintzia:</strong>New Jersey</p>
+               <p><strong>Helbidea:</strong>2007 Zagora St, 50090</p><span class="etiketa">America</span></div>
+            <div class="karta-biltegi">
+               <h3>Seattle, Washington<small>(ID: 4)</small></h3>
+               <p><strong>Herrialdea:</strong>United States of America (US)</p>
+               <p><strong>Probintzia:</strong>Washington</p>
+               <p><strong>Helbidea:</strong>2004 Charade Rd, 98199</p><span class="etiketa">America</span></div>
+            <div class="karta-biltegi">
+               <h3>Toronto<small>(ID: 5)</small></h3>
+               <p><strong>Herrialdea:</strong>Canada (CA)</p>
+               <p><strong>Probintzia:</strong>Ontario</p>
+               <p><strong>Helbidea:</strong>147 Spadina Ave, M5V 2L7</p><span class="etiketa">America</span></div>
+            <div class="karta-biltegi">
+               <h3>Sydney<small>(ID: 6)</small></h3>
+               <p><strong>Herrialdea:</strong>Australia (AU)</p>
+               <p><strong>Probintzia:</strong>New South Wales</p>
+               <p><strong>Helbidea:</strong>12-98 Victoria Street, 2901</p><span class="etiketa">Asia</span></div>
+            <div class="karta-biltegi">
+               <h3>Mexico City<small>(ID: 7)</small></h3>
+               <p><strong>Herrialdea:</strong>Mexico (MX)</p>
+               <p><strong>Probintzia:</strong>Distrito Federal,</p>
+               <p><strong>Helbidea:</strong>Mariano Escobedo 9991, 11932</p><span class="etiketa">America</span></div>
+            <div class="karta-biltegi">
+               <h3>Beijing<small>(ID: 8)</small></h3>
+               <p><strong>Herrialdea:</strong>China (CN)</p>
+               <p><strong>Probintzia:</strong></p>
+               <p><strong>Helbidea:</strong>40-5-12 Laogianggen, 190518</p><span class="etiketa">Asia</span></div>
+            <div class="karta-biltegi">
+               <h3>Bombay<small>(ID: 9)</small></h3>
+               <p><strong>Herrialdea:</strong>India (IN)</p>
+               <p><strong>Probintzia:</strong>Maharashtra</p>
+               <p><strong>Helbidea:</strong>1298 Vileparle (E), 490231</p><span class="etiketa">Asia</span></div>
+         </div>
+      </main>
+      <footer>
+         <div class="footer-grid">
+            <div class="footer-section">
+               <h4>GAMESTOP</h4>
+               <p>Bideojokoen kudeaketa sistema pribatua.</p>
+            </div>
+            <div class="footer-section">
+               <h4>Laguntza</h4>
+               <ul>
+                  <li><a href="#">Dokumentazioa</a></li>
+                  <li><a href="#">Soporte teknikoa</a></li>
+               </ul>
+            </div>
+         </div>
+         <hr>
+         <p>2026 GAMESTOP. Guztiak erreserbatuta.</p>
+      </footer>
+   </body><script>
+        function bilatuEdukia() {
+        var input = document.getElementById('bilatzailea');
+        var filter = input.value.toLowerCase();
+        
+        // 1. Filtrar Tarjetas (Bezeroak, Saltzaileak, Biltegiak)
+        var kartak = document.querySelectorAll('.karta-langilea, .karta-biltegi');
+        kartak.forEach(function(karta) {
+        var testua = karta.textContent || karta.innerText;
+        karta.style.display = testua.toLowerCase().indexOf(filter) > -1 ? "" : "none";
+        });
+        
+        // 2. Filtrar Filas de Tablas (Bulegariak, Eskariak, Produktuak)
+        var lerroak = document.querySelectorAll('tbody tr');
+        lerroak.forEach(function(lerroa) {
+        var testua = lerroa.textContent || lerroa.innerText;
+        lerroa.style.display = testua.toLowerCase().indexOf(filter) > -1 ? "" : "none";
+        });
+        }
+      </script></html>
